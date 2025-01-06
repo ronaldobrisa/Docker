@@ -38,8 +38,6 @@ Antes de rodar este projeto, você precisará de:
 
 
 - **Docker**: Contêinerização da aplicação.
-- **Kubernetes**: Orquestração de contêineres.
-- **Terraform**: Infraestrutura como código.
 
 
 ## Como Rodar o Projeto
@@ -51,7 +49,15 @@ Passo a passo para clonar o repositório e configurar o ambiente.
 git clone https://github.com/usuario/nome-do-projeto.git
 cd nome-do-projeto
 ```
+### 2. Atualizar pacotes Ubuntu
+```bash
+sudo apt-get update
+```
 
+### 3. Instalar o Docker engine e componentes
+```bash
+sudo apt-get install docker-ce docker-ce-cli containerd.io
+```
 
 ## Automação e Pipelines
 Descreve a configuração e os passos do pipeline CI/CD.
