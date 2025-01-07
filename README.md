@@ -51,6 +51,7 @@ Passo a passo para clonar o repositório e configurar o ambiente.
 git clone https://github.com/usuario/nome-do-projeto.git
 cd nome-do-projeto
 ```
+
 ### 2. Atualizar pacotes Ubuntu
 ```bash
 sudo apt-get update
