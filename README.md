@@ -73,15 +73,16 @@ docker --version
 docker-compose --version
 ```
 
-### 6. Criar AMI na AWS
+### 6. Criar a instância EC2 na AWS
+- https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1#LaunchInstances:
 
-### 7. Criar a instância EC2 na AWS
 
-### 8. Configurar o security group
+### 7. Configurar o security group
 
-### 9. Key pair
 
-### 10. 
+### 8. Key pair
+
+### 9. 
 
 ## Automação e Pipelines
 Descreve a configuração e os passos do pipeline CI/CD.
