@@ -73,7 +73,15 @@ docker --version
 docker-compose --version
 ```
 
+### 6. Criar AMI na AWS
 
+### 7. Criar a instância EC2 na AWS
+
+### 8. Configurar o security group
+
+### 9. Key pair
+
+### 10. 
 
 ## Automação e Pipelines
 Descreve a configuração e os passos do pipeline CI/CD.
