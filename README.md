@@ -59,6 +59,19 @@ sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io
 ```
 
+### 4. Instalar plugin docker compose
+```bash
+sudo apt-get install docker-compose-plugin
+```
+
+### 5. Verificar versão instalada
+```bash
+docker --version
+docker-compose --version
+```
+
+
+
 ## Automação e Pipelines
 Descreve a configuração e os passos do pipeline CI/CD.
 
