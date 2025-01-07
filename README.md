@@ -32,12 +32,14 @@ Lista as ferramentas necessárias para rodar o projeto localmente.
 
 Antes de rodar este projeto, você precisará de:
 - [Docker](https://docs.docker.com/engine/install/ubuntu/) - Para contêinerização da aplicação.
+- [EC2 AWS]()
 
 
 ### Componentes principais
 
 
 - **Docker**: Contêinerização da aplicação.
+- **EC2 Amazon**: Máquina Linux virtualizada na Cloud AWS.
 
 
 ## Como Rodar o Projeto
