@@ -4,10 +4,9 @@
 backup_dir="/home/ronaldobrisa/Docker"
 
 # Define the backup file name
-backup_file="backup-$(date +%Y-%m-%d).tar.gz"
+backup_file="backup_Docker-$(date +%d-%m-%Y %H:%M:%S).tar.gz"
 
 # Create the backup
-date_formatted=$(date +"%Y-%m-%d %H:%M:%S")
 tar -czf $backup_dir/$backup_file-$date_formatted /var/lib/docker/volumes
 
 # Remove backups older than 30 days
