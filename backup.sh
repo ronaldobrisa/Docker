@@ -9,6 +9,16 @@ backup_file="backup_Docker-$(date +%d-%m-%Y-%H:%M:%S).tar.gz"
 # Create the backup destiny directory
 tar -czf $backup_dir/$backup_file /mnt/backups-docker
 
+# Verificar se o comando tar foi bem sucedido
+if [ $? -eq 0 ]; then
+    echo "Backup concluído com sucesso: $BACKUP_NAME" >> $LOG_FILE
+else
+    echo "Erro no backup: $(date)" >> $LOG_FILE
+fi
+
+# Definir o cron job: execução diária às 1:00 AM
+CRON_SCHEDULE="0 1 * * * $BACKUP_SCRIPT >> /home/ronaldobrisa/cron_backup.log 2>&1"
+
 # Remove backups older than 30 days
 find $backup_dir -name "backup-*.tar.gz" -type f -mtime +30 -exec rm {} \;
 
