@@ -17,7 +17,7 @@ else
 fi
 
 # Definir o cron job: execução diária às 10:15 AM
-CRON_SCHEDULE="0 1 * * * $BACKUP_SCRIPT >> /home/ronaldobrisa/cron_backup.log 2>&1"
+CRON_SCHEDULE="0 10 * * * $BACKUP_SCRIPT >> /home/ronaldobrisa/cron_backup.log 2>&1"
 
 # Remove backups older than 30 days
 find $backup_dir -name "backup-*.tar.gz" -type f -mtime +30 -exec rm {} \;
