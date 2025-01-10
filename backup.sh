@@ -16,7 +16,7 @@ else
     echo "Erro no backup: $(date)" >> $LOG_FILE
 fi
 
-# Definir o cron job: execução diária às 1:00 AM
+# Definir o cron job: execução diária às 10:15 AM
 CRON_SCHEDULE="0 1 * * * $BACKUP_SCRIPT >> /home/ronaldobrisa/cron_backup.log 2>&1"
 
 # Remove backups older than 30 days
