@@ -87,12 +87,20 @@ docker-compose --version
 ## Automação e Pipelines
 Descreve a configuração e os passos do pipeline CI/CD.
 
-
 A automação do fluxo de trabalho é realizada através de pipelines no Jenkins. O pipeline CI/CD é responsável por:
 Build: Compilar e testar o código da aplicação.
 Testes: Executar testes unitários e de integração.
 Deploy: Realizar o deploy da aplicação nos ambientes de desenvolvimento, homologação e produção.
 Monitoramento: Integrar com Prometheus e Grafana para monitoramento de performance e disponibilidade.
+
+* * * * * /caminho/do/comando
+- - - - -
+| | | | |
+| | | | +---- Dia da semana (0 - 6) (Domingo = 0)
+| | | +------ Mês (1 - 12)
+| | +-------- Dia do mês (1 - 31)
+| +---------- Hora (0 - 23)
++------------ Minuto (0 - 59)
 
 
 ## Monitoramento e Logs
