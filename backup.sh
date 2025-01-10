@@ -25,16 +25,16 @@ CRON_SCHEDULE="15 10 * * * $BACKUP_SCRIPT >> /home/ronaldobrisa/cron_backup.log 
 # Confirmar se o cron job foi adicionado
 echo "Cron job agendado para rodar todos os dias às 10:15 AM."
 
-# Remove backups older than 30 days
-find $backup_dir -name "backup-*.tar.gz" -type f -mtime +30 -exec rm {} \;
-
-# Log the backup
-log_file="/var/log/Docker/daily-backup.log"
-
 # Upload to github
 cd /home/ronaldobrisa/Docker
 git add .
 git commit -m "Backup"
 git push origin main
+
+# Log the backup
+log_file="/var/log/Docker/daily-backup.log"
+
+# Remove backups older than 30 days
+find $backup_dir -name "backup-*.tar.gz" -type f -mtime +30 -exec rm {} \;
 
 # End of script
