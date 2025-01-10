@@ -28,7 +28,7 @@ Explica como o sistema é estruturado e quais tecnologias são usadas.
 
 ## Pré-requisitos
 Lista as ferramentas necessárias para rodar o projeto localmente.
-
+1
 
 Antes de rodar este projeto, você precisará de:
 - [Docker](https://docs.docker.com/engine/install/ubuntu/) - Para contêinerização da aplicação.
