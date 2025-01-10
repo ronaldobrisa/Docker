@@ -17,7 +17,7 @@ else
 fi
 
 # Definir o cron job: execução diária às 10:15 AM
-CRON_SCHEDULE="15 10 * * * $BACKUP_SCRIPT >> /home/ronaldobrisa/cron_backup.log 2>&1"
+CRON_SCHEDULE="15 10 * * * $BACKUP_SCRIPT >> /home/ronaldobrisa/daily-backup.log 2>&1"
 
 # Adicionar o cron job no crontab
 (crontab -l; echo "$CRON_SCHEDULE") | crontab -
