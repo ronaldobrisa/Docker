@@ -16,7 +16,6 @@ find $backup_dir -name "backup-*.tar.gz" -type f -mtime +30 -exec rm {} \;
 # Log the backup
 log_file="/var/log/Docker/daily-backup.log"
 
-
 # Upload to github
 cd /home/ronaldobrisa/Docker
 git add .
