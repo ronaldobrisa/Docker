@@ -19,6 +19,9 @@ fi
 # Definir o cron job: execução diária às 10:15 AM
 CRON_SCHEDULE="0 10 * * * $BACKUP_SCRIPT >> /home/ronaldobrisa/cron_backup.log 2>&1"
 
+# Adicionar o cron job no crontab
+(crontab -l; echo "$CRON_SCHEDULE") | crontab -
+
 # Remove backups older than 30 days
 find $backup_dir -name "backup-*.tar.gz" -type f -mtime +30 -exec rm {} \;
 
