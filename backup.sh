@@ -11,9 +11,9 @@ tar -czf $backup_dir/$backup_file /mnt/backups-docker
 
 # Verificar se o comando tar foi bem sucedido
 if [ $? -eq 0 ]; then
-    echo "Backup concluído com sucesso: $BACKUP_NAME" >> $LOG_FILE
+    echo "Backup concluído com sucesso: $backup_file" >> $log_file
 else
-    echo "Erro no backup: $(date)" >> $LOG_FILE
+    echo "Erro no backup: $(date)" >> $log_file
 fi
 
 # Definir o cron job: execução diária às 10:15 AM
