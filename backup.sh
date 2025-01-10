@@ -20,6 +20,6 @@ log_file="/var/log/Docker/daily-backup.log"
 cd /home/ronaldobrisa/Docker
 git add .
 git commit -m "Backup"
-git push origin master
+git push origin main
 
 # End of script
